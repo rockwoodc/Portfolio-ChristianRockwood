@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #6d6b64;
+  --tertiary-color: #020809;
+    }
+
+body {
+    color: var(--tertiary-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* apply styles to <header> */
+header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+  }
+
+  header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+header nav {
+      margin: 7px 0;
+  }
+
+header nav ul li {
+    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style:none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* Hero Style Start */
+.hero {
+    background-image: url(https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+  }
+
+.hero-cta{
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+/*title style*/
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 0 auto 35px auto;
+    width: 50%;
+  }
+  
+.primary-border {
+    border-color: var(--primary-color);
+  }
+  
+  .secondary-border {
+    border-color: var(--tertiary-color);
+  }
+
+/*Start what we do section*/
+.section-title{
+    font-size: 55px;
+    border-bottom: 3px solid;
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    }
+      
+.intro p {
+        line-height: 1.7;
+        color: var(--tertiary-color);
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+/*About me*/
+.projecets {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+  
+.project {
+        margin: 20px;
+        flex: 1;
+        background: var(--secondary-color);
+        color: var(--primary-color);
+    }
+      
+.project img {
+        width: 100%;
+    }
+
+.project-title {
+        padding: 25px;
+        line-height: 1.3;
+    }
+  
+.project-title h3 {
+        font-size: 28px;
+    }
+      
+.project-title h4 {
+        font-weight: lighter;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+/*Contact me section*/
+.contact {
+    background: var(--secondary-color);
+  }
+
+.contact-padding{
+    margin: 10px 0px 10px;
+    width: 95%;
+    padding: 8px;
+  }
+
+#contact-message{
+    margin: 10px 0px 10px;
+    width: 95%
+  }
+
+  .contact h2{
+    color: var(--primary-color);
+  }
+
+.contact-info >*{
+    flex: 1;
+    margin: 15px;
+  }
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+.contact-info iframe{
+    height: 400px;
+  }
+
+.contact-info div {
+    color: white;
+    }
+
+.contact-info h3{
+   color: var(--primary-color);
+   font-size: 32px;
+    }
+
+.contact-info p .contact-info address {
+      margin: 20px 0;
+      line-height: 1.5;
+      font-size: 16px;
+      font-style: normal;
+    }
+
+.contact-info a{
+      color: var(--primary-color);
+    }
+
+.contact-info textarea{
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+      }
+    
+.contact-info textarea:focus {
+    background-color: rgb(212, 237, 244);
+    outline: none;
+    }
+
+.secondary-border{
+    border-bottom: 2px solid;
+    border-color: #39a6b2;
+    padding: 0 100px 20px 100px;
+    margin-bottom: 35px;
+    display: inline-block
+    }
+
+.text-left {
+    text-align: left;
+    }
+      
+.text-right {
+    text-align: right;
+    }
+
+.flex-row{
+    display: flex;
+    }
+
+ /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px){
+    header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    }
+  
+header h1 {
+    width: 100%;
+    text-align: center;
+    }
+  
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    }
+  
+header nav ul li a {
+    font-size: 20px;
+    }  
+
+.hero-cta {
+    text-align: center;
+    width: 100%;
+    }
+  
+.section-title {
+    width: 80%;
+    }
+    
+.project {
+    flex: 0 70%;
+    }
+    
+}
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+section {
+    padding: 30px 15px;
+    }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {  
+.section-title {
+    width: 95%;
+    }
+  
+.intro p {
+    width: 100%;
+    }
+  
+.project {
+    flex: 0 100%;
+    }
+  
+.contact-info {
+    text-align: center;
+    }
+  
+.contact-info > * {
+    flex: 0 100%;
+    }
+  
+  }
+}

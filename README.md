@@ -7,4 +7,4 @@ In this assignment I created a digital portfolio that I will continue to update 
 
 ![Portfolio](./assets/images/readmeSS.png)
 
-<!-- [Link to deployed application](https://rockwoodc.github.io/Horiseon-Website-Refactoring/)UPDATE!!!!!!!! -->
+[Link to deployed application](https://rockwoodc.github.io/Portfolio-ChristianRockwood/)

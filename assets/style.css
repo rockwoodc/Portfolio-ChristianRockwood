@@ -1,3 +1,4 @@
+/*code that applys to the whole webpage*/
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +34,7 @@ header {
     text-decoration: none;
   }
 
+/*My name in the navigation bar*/
 header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -40,7 +42,8 @@ header h1 {
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-  
+
+/*This defines the characteristics of my navigation lists*/
 header a {
     text-decoration: none;
     color: var(--primary-color);
@@ -84,7 +87,7 @@ header nav ul li a:hover {
     background-attachment: fixed;
     background-position: 80%;
   }
-
+/*A subtitle to grab the viewers attention*/
 .hero-cta{
     width: 35%;
     text-align: center;
@@ -97,9 +100,9 @@ header nav ul li a:hover {
 /*add a characteristic to put h2 on top left*/
 .hero-cta h2 {
    position: static;
- }
+}
 
-/*title style*/
+/*border style for the whole document*/
 .primary-border {
     border-color: var(--primary-color);
   }
@@ -108,9 +111,9 @@ header nav ul li a:hover {
     border-color: var(--tertiary-color);
   }
 
-/*About me section*/
+/*Section titles for the whole document*/
 .section-title {
-    font-size: 55px;
+    font-size: 50px;
     border-bottom: 3px solid;
     border-color: var(--primary-color);
     color: var(--secondary-color);
@@ -120,14 +123,12 @@ header nav ul li a:hover {
     width: 50%;
     }
 
-/*need to put pic and bio next to eachother*/
-.about-me-info img, .intro p {
-}
+/*About me section*/
+/*this code allows the image and bio to be next to eachother and resize when needed*/
 
 .intro {
     display:flex;
     flex-direction: row;
-    margin: 0 50px 0 50px;
 }
 
 .aboutMeImage {
@@ -138,16 +139,10 @@ header nav ul li a:hover {
 }
 
 .aboutMeImage img {
-    width: 70%;
-    height: 70%;
+    width: 100%;
     border-radius: 10%;
 }
-
-.about-me-info {
-    margin: 0 70px 0 1px;
-}
  
-      
 .about-me-info p {
     line-height: 1.7;
     color: var(--tertiary-color);
@@ -178,7 +173,7 @@ header nav ul li a:hover {
     justify-content: space-around;
     }
 
-/* project one needs to display bigger than others*/
+/* project 1 to display bigger than others*/
 .project-large {
     margin: 20px;
     flex: 1;
@@ -293,7 +288,7 @@ header nav ul li a:hover {
 
  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px){
-    header {
+header {
     padding-bottom: 0;
     justify-content: center;
     position: relative;
